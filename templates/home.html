@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Stroke_prediction</title>
+    </head>
+
+    <body style="background-color: azure">
+
+        <form action="\predict" method="POST">
+
+        <center>
+
+            <h1 style="color:black">Brain Stroke Prediction🧠</h1>
+            <hr>
+            <br>
+            <br>
+
+            <table>
+
+                <tr>
+                    <td><h2>Age</h2></td>
+                    <td><h2>:</h2></td>
+                    <td><input type="number" placeholder="Age" name="Age" id="Age" required></td>
+                </tr>
+
+                <tr>
+                    <td><h2>Work Type</h2></td>
+                    <td><h2>:</h2></td>
+                    <td>
+                        <select name="work" id="work" required>
+                            <option>Children</option>
+                            <option>Government Job</option>
+                            <option>Self Employed</option>
+                            <option>Private Job</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><h2>Residence Type</h2></td>
+                    <td><h2>:</h2></td>
+                    <td>
+                        <input type="radio" name="residence" id="residence" required>Urban
+                        <input type="radio" name="residence" id="residence" required>Rural
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><h2>Average Glucose level</h2></td>
+                    <td><h2>:</h2></td>
+                    <td><input type="number" placeholder="Avg Glucose lvl" name="glucose" id="glucose" required></td>
+                </tr>
+
+                <tr>
+                    <td><h2>BMI</h2></td>
+                    <td><h2>:</h2></td>
+                    <td><input type="number" placeholder="BMI" name="bmi" id="bmi" required></td>
+                </tr>
+
+                <tr>
+                    <td><h2>Smoking Status</h2></td>
+                    <td><h2>:</h2></td>
+                    <td>
+                        <select name="smoke" id="smoke" required>
+                            <option>Unknown</option>
+                            <option>Never Smoked</option>
+                            <option>Formerly Smoked</option>
+                            <option>Smokes</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+
+            <input type="submit" value="Submit">
+            <br>
+
+            <h2 style="color:red">{{prediction_text}}</h2>
+
+            <p style="color:purple"><b>@ Yuvanesh</b></p>
+
+        </center>
+
+        </form>
+
+    </body>
+
+
+
+</html>
